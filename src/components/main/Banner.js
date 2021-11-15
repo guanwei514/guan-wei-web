@@ -3,11 +3,10 @@ import { useTranslation } from "../../langs/useTranslation";
 import ClickBtn from "../common/ClickBtn";
 import selfPhoto from "../../assets/images/self.svg";
 import mainBall from "../../assets/images/mainBall.svg";
-import ReactTypingEffect from 'react-typing-effect';
-
+import ReactTypingEffect from "react-typing-effect";
+import { scrollTo } from "../../helpers/router";
 
 const Banner = (props) => {
-  const { history } = props;
   const { t } = useTranslation("banner");
   return (
     <div className="banner home">
@@ -16,7 +15,8 @@ const Banner = (props) => {
         <div className="name">{t("selfName")}</div>
         <div className="position">
           <span>
-            {t('passionate')}<ReactTypingEffect text={[t('position1'),t('position2')]} />
+            {t("passionate")}
+            <ReactTypingEffect text={[t("position1"), t("position2")]} />
           </span>
         </div>
         <div className="intro">{t("intro")}</div>
@@ -26,14 +26,14 @@ const Banner = (props) => {
             type="primaryBtn"
             text={t("myWork")}
             fontSize="20px"
-            onClick={() => history.push("/portfolio")}
+            onClick={() => scrollTo(0, 600, `.project`)}
           />
           <ClickBtn
             width="180px"
             type="secBtn"
             text={t("contact")}
             fontSize="20px"
-            onClick={() => history.push("/experience")}
+            onClick={() => scrollTo(0, 600, `.contact`)}
           />
         </div>
       </div>
@@ -44,9 +44,9 @@ const Banner = (props) => {
         </div>
       </div>
       <div className="go-to">
-        <a href="#about">
+        <div onClick={() => scrollTo(0, 600, `.about`)}>
           <span></span>
-        </a>
+        </div>
       </div>
     </div>
   );

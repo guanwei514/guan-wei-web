@@ -1,3 +1,15 @@
 {
-
+  "aboutMe": "About Me",
+  "subtitle": "A Software System Engineer Based In Taiwan",
+  "name": "I'm Guan Wei Su",
+  "a": "A",
+  "position": "Software System engineer",
+  "basedIn": "Based In",
+  "taiwan": "Taiwan",
+  "intro": "I develop software and make system integration for customers in industrial automation field, specializing in software system development, UI design, mechatronics, system control, research studies. My passion is to solve problems through my technical skills and professional knowledge. Check out my Portfolio.",
+  "birthday":"Birthday",
+  "age":"Age",
+  "email":"Email",
+  "phone":"Phone",
+  "downloadCV":"Download CV"
 }

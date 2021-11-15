@@ -3,7 +3,6 @@ import { useTranslation } from "../../langs/useTranslation";
 import ClickBtn from "../common/ClickBtn";
 
 const Skill = (props) => {
-  const { history } = props;
   const { t } = useTranslation("skill");
 
   return (
