@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/logo.svg";
-import logoW from "../../assets/images/logo_w.svg";
+import logo from "../../assets/images/logo.png";
+import logoW from "../../assets/images/logo_w.png";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from "../../langs/useTranslation";
 import LangSelect from "../common/LangSelect";

@@ -43,7 +43,7 @@ const About = (props) => {
               <div className="info-value">0929961079</div>
             </div>
           </div>
-          <a className="primaryBtn click-btn downloadCV" href={cv} download>
+          <a className="primaryBtn click-btn downloadCV" href={cv} download target="_blank" rel="noreferrer">
             {t("downloadCV")}
           </a>
         </div>
