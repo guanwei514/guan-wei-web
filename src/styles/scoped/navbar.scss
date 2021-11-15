@@ -37,7 +37,7 @@
       top: 0 !important;
       overflow: initial;
     }
-    .navbar-rwd-button{
+    .navbar-rwd-button {
       display: none;
     }
     .langSelect {
@@ -55,26 +55,31 @@
     }
   }
 }
-.MuiDrawer-paper{
-  .MuiBox-root{
+.MuiDrawer-paper {
+  .MuiBox-root {
     background-color: $primary_bg;
     color: #fff;
-    img{
+    img {
       width: 30px;
       margin: 15px 0 0 15px;
     }
-    svg{
+    svg {
       color: #fff;
     }
   }
 }
 @media (max-width: 767px) {
-  .navbar-items {
-    display: none !important;
-  }
-  .navbar-rwd-button{
-    display: flex !important;
-    margin-right: 10px;
-    cursor: pointer;
+  .navbar {
+   padding: 0 20px;
+    .navbar-right {
+      .navbar-items {
+        display: none;
+      }
+      .navbar-rwd-button {
+        display: flex;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
   }
 }
