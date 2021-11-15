@@ -3,16 +3,22 @@ import { useTranslation } from "../../langs/useTranslation";
 import ClickBtn from "../common/ClickBtn";
 import selfPhoto from "../../assets/images/self.svg";
 import mainBall from "../../assets/images/mainBall.svg";
+import ReactTypingEffect from 'react-typing-effect';
+
 
 const Banner = (props) => {
   const { history } = props;
   const { t } = useTranslation("banner");
   return (
-    <div className="banner">
+    <div className="banner home">
       <div className="banner-left">
         <div className="hello">{t("helloIam")}</div>
         <div className="name">{t("selfName")}</div>
-        <div className="position">{t("position")}</div>
+        <div className="position">
+          <span>
+            {t('passionate')}<ReactTypingEffect text={[t('position1'),t('position2')]} />
+          </span>
+        </div>
         <div className="intro">{t("intro")}</div>
         <div className="btn-area">
           <ClickBtn

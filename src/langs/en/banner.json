@@ -1,7 +1,9 @@
 {
     "helloIam":"Hello, I am",
     "selfName":"Guan Wei",
-    "position":"A passionate System Developer",
+    "passionate":"A passionate ",
+    "position1":"System Developer",
+    "position2":"System Architect",
     "intro":"Providing industry automation and system integration solutions with my passion and profession",
     "myWork":"My Work",
     "contact":"Contact Me"
