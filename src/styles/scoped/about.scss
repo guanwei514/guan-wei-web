@@ -19,7 +19,7 @@
     .about-left {
       width: 35%;
       padding: 10px;
-      margin-right: 50px;
+      margin-right: 120px;
       border-radius: 10px;
       background-color: #fff;
       box-shadow: 0 0 5px #aaa;
@@ -71,6 +71,9 @@
           }
         }
       }
+      .downloadCV{
+        font-size: 14px;
+      }
     }
   }
 }
@@ -86,6 +89,7 @@
     .main-area {
       .about-left {
         width: 45%;
+        margin-right: 60px;
       }
       .about-right {
         width: 50%;
