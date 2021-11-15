@@ -1,0 +1,22 @@
+@keyframes up-and-down {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+@keyframes down {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 15px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}

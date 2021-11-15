@@ -1,0 +1,60 @@
+//Global common items
+#root {
+  height: 100%;
+}
+.container {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "JetBrains Mono", monospace, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.overlay-without-color {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+}
+.click-btn {
+  padding: 15px 20px;
+  box-shadow: 0 3px 10px #999;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s linear;
+  &.primaryBtn {
+    background-color: $primary_bg;
+    color: #fff;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &.secBtn {
+    border: 1px solid $primary_bg;
+    box-shadow: 0 0 5px $primary_bg;
+    color: $primary_bg;
+    &:hover {
+      background-color: $primary_bg;
+      color: #fff;
+    }
+  }
+}

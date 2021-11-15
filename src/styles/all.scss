@@ -1,0 +1,23 @@
+//Global
+@import "./global/mixins.scss";
+@import "./global/variable.scss";
+@import "./global/common.scss";
+@import "./global/animation.scss";
+
+//Scoped
+@import "./scoped/navbar.scss";
+@import "./scoped/banner.scss";
+@import "./scoped/skill.scss";
+
+
+
+
+
+/** Record the css might cause global effects
+
+1. z-index {
+    .overlay:999
+    .overlay-without-color :999
+}
+
+**/
