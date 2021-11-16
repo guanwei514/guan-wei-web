@@ -17,9 +17,16 @@ const Main = () => {
     if (top + h / 2 > home && top + h / 2 < about) {
       document.querySelector(".home-nav").classList.add("active");
     } else {
+      document.querySelector(".banner-right").classList.add("active");
       document.querySelector(".home-nav").classList.remove("active");
     } 
     if (top + h / 2 > about && top + h / 2 < skill) {
+      document.querySelector(".about-left").classList.add("active");
+      document.querySelector(".about-name").classList.add("active");
+      document.querySelector(".about-position").classList.add("active");
+      document.querySelector(".about-intro").classList.add("active");
+      document.querySelector(".about-self-info").classList.add("active");
+      document.querySelector(".about-downloadCV").classList.add("active");
       document.querySelector(".about-nav").classList.add("active");
     } else {
       document.querySelector(".about-nav").classList.remove("active");

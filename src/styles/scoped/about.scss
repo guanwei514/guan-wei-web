@@ -16,6 +16,13 @@
       border-radius: $border_radius;
       background-color: #fff;
       box-shadow: 0 0 5px #aaa;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 1s;
+      &.active{
+        opacity: 1;
+        transform: translateY(0);
+      }
       img {
         border-radius: $border_radius;
         width: 100%;
@@ -24,28 +31,52 @@
     }
     .about-right {
       width: 50%;
-      .name {
+      .about-name {
         margin-top: 15px;
         font-size: 30px;
         font-weight: 800;
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        &.active{
+          opacity: 1;
+        }
       }
-      .position {
+      .about-position {
         font-size: 16px;
         display: flex;
         margin: 5px 0 0;
         white-space: nowrap;
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay:1s;
+        &.active{
+          opacity: 1;
+        }
         div {
           margin-right: 10px;
         }
       }
-      .intro {
+      .about-intro {
         margin: 25px 0;
         font-size: 13px;
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 1.5s;
+        &.active{
+          opacity: 1;
+        }
       }
-      .self-info {
+      .about-self-info {
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 2s;
+        &.active{
+          opacity: 1;
+        }
         .info {
           display: flex;
           margin: 5px 0;
@@ -64,8 +95,14 @@
           }
         }
       }
-      .downloadCV {
+      .about-downloadCV {
         font-size: 14px;
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 2.5s;
+        &.active{
+          opacity: 1;
+        }
       }
     }
   }
@@ -81,16 +118,16 @@
       }
       .about-right {
         width: 50%;
-        .name {
+        .about-name {
           font-size: 26px;
         }
-        .position {
+        .about-position {
           font-size: 14px;
         }
-        .intro {
+        .about-intro {
           font-size: 12px;
         }
-        .self-info {
+        .about-self-info {
           .info {
             .info-label {
               font-size: 13px;
@@ -100,7 +137,7 @@
             }
           }
         }
-        .downloadCV {
+        .about-downloadCV {
           font-size: 12px;
         }
       }
@@ -117,13 +154,13 @@
       }
       .about-right {
         width: 50%;
-        .name {
+        .about-name {
           font-size: 20px;
         }
-        .position {
+        .about-position {
           font-size: 12px;
         }
-        .self-info {
+        .about-self-info {
           .info {
             .info-label {
               font-size: 12px;
@@ -151,7 +188,7 @@
       .about-right {
         width: 100%;
         padding: 0 $padding_md 0;
-        .name {
+        .about-name {
           font-size: 20px;
         }
       }
@@ -168,7 +205,7 @@
       }
       .about-right {
         padding: 0 $padding_xs 0;
-        .name {
+        .about-name {
           font-size: 16px;
         }
       }

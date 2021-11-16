@@ -17,15 +17,15 @@ const About = (props) => {
           <img src={aboutPic} alt="aboutPic" />
         </div>
         <div className="about-right">
-          <div className="name">{t("name")}</div>
-          <div className="position">
+          <div className="about-name">{t("name")}</div>
+          <div className="about-position">
             <div>{t("a")}</div>
             <div className="primary-text">{t("position")}</div>
             <div>{t("basedIn")}</div>
             <div className="primary-text">{t("taiwan")}</div>
           </div>
-          <div className="intro">{t("intro")}</div>
-          <div className="self-info">
+          <div className="about-intro">{t("intro")}</div>
+          <div className="about-self-info">
             <div className="info">
               <div className="info-label">{t("birthday")}</div>
               <div className="info-value">14th May 1994</div>
@@ -43,7 +43,7 @@ const About = (props) => {
               <div className="info-value">0929961079</div>
             </div>
           </div>
-          <a className="primaryBtn click-btn downloadCV" href={cv} download target="_blank" rel="noreferrer">
+          <a className="primaryBtn click-btn about-downloadCV" href={cv} download target="_blank" rel="noreferrer">
             {t("downloadCV")}
           </a>
         </div>
