@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/guan-wei-web/static/css/main.0b2ebdcb.chunk.css",
-    "main.js": "/guan-wei-web/static/js/main.7652adb7.chunk.js",
-    "main.js.map": "/guan-wei-web/static/js/main.7652adb7.chunk.js.map",
+    "main.js": "/guan-wei-web/static/js/main.0d91384f.chunk.js",
+    "main.js.map": "/guan-wei-web/static/js/main.0d91384f.chunk.js.map",
     "runtime-main.js": "/guan-wei-web/static/js/runtime-main.9661da41.js",
     "runtime-main.js.map": "/guan-wei-web/static/js/runtime-main.9661da41.js.map",
     "static/js/2.cd35f095.chunk.js": "/guan-wei-web/static/js/2.cd35f095.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.9661da41.js",
     "static/js/2.cd35f095.chunk.js",
     "static/css/main.0b2ebdcb.chunk.css",
-    "static/js/main.7652adb7.chunk.js"
+    "static/js/main.0d91384f.chunk.js"
   ]
 }
