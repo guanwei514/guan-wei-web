@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/guan-wei-web/static/css/main.0b2ebdcb.chunk.css",
-    "main.js": "/guan-wei-web/static/js/main.0d91384f.chunk.js",
-    "main.js.map": "/guan-wei-web/static/js/main.0d91384f.chunk.js.map",
+    "main.css": "/guan-wei-web/static/css/main.d19d02c2.chunk.css",
+    "main.js": "/guan-wei-web/static/js/main.249632a6.chunk.js",
+    "main.js.map": "/guan-wei-web/static/js/main.249632a6.chunk.js.map",
     "runtime-main.js": "/guan-wei-web/static/js/runtime-main.9661da41.js",
     "runtime-main.js.map": "/guan-wei-web/static/js/runtime-main.9661da41.js.map",
     "static/js/2.cd35f095.chunk.js": "/guan-wei-web/static/js/2.cd35f095.chunk.js",
     "static/js/2.cd35f095.chunk.js.map": "/guan-wei-web/static/js/2.cd35f095.chunk.js.map",
     "index.html": "/guan-wei-web/index.html",
-    "static/css/main.0b2ebdcb.chunk.css.map": "/guan-wei-web/static/css/main.0b2ebdcb.chunk.css.map",
+    "static/css/main.d19d02c2.chunk.css.map": "/guan-wei-web/static/css/main.d19d02c2.chunk.css.map",
     "static/js/2.cd35f095.chunk.js.LICENSE.txt": "/guan-wei-web/static/js/2.cd35f095.chunk.js.LICENSE.txt",
     "static/media/GuanWei Su - CV (July 2021).0446a11f.pdf": "/guan-wei-web/static/media/GuanWei Su - CV (July 2021).0446a11f.pdf",
     "static/media/aboutPic.d221e2af.png": "/guan-wei-web/static/media/aboutPic.d221e2af.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.9661da41.js",
     "static/js/2.cd35f095.chunk.js",
-    "static/css/main.0b2ebdcb.chunk.css",
-    "static/js/main.0d91384f.chunk.js"
+    "static/css/main.d19d02c2.chunk.css",
+    "static/js/main.249632a6.chunk.js"
   ]
 }
