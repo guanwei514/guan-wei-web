@@ -39,6 +39,7 @@
     display: flex;
     align-items: flex-end;
     padding-top: 100px;
+    animation: 1.5s hidden-to-show;
     .banner-img {
       position: relative;
       width: 55%;
@@ -172,7 +173,7 @@
   .banner {
     .banner-right {
       .banner-img {
-        width:300px;
+        width: 300px;
       }
     }
   }
