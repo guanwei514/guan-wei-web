@@ -269,6 +269,18 @@
       .skill-right {
         .tools {
           flex-wrap: wrap;
+          .tools1 {
+            width: 100%;
+            justify-content: space-between;
+          }
+          .tools2 {
+            width: 100%;
+            margin-top: 10px;
+            img {
+              margin-right: 20px;
+              width: 30%;
+            }
+          }
         }
       }
     }
@@ -280,8 +292,13 @@
     padding: 30px $padding_xs 50px;
     .main-area {
       .skill-right {
-        img {
-          height: 25px;
+        .tools {
+          .tools2 {
+            justify-content: space-between;
+            img {
+              width: 45%;
+            }
+          }
         }
       }
     }
@@ -294,13 +311,8 @@
     .main-area {
       .skill-right {
         .tools {
-          .tools1 {
-            width: 100%;
-            justify-content: space-between;
-          }
           .tools2 {
             width: 100%;
-            justify-content: space-between;
           }
         }
       }
