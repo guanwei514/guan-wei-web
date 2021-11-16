@@ -99,7 +99,7 @@ const Skill = (props) => {
               Certified LabVIEW Associate Developer (CLAD) ( 03/19/2015 )
             </div>
           </div>
-          <div className="skill-right-title">{t("partent")}</div>
+          <div className="skill-right-title">{t("patent")}</div>
           <div className="skill-right-body patent">
             <div className="skill-right-text">
               <FiberManualRecordIcon />
