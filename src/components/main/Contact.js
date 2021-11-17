@@ -40,6 +40,7 @@ const Contact = (props) => {
   const [check, setCheck] = useState(false);
   const [noty, setNoty] = useState(false);
   const [notyError, setNotyError] = useState(false);
+  const [btnDisabled, setBtnDisabled] = useState(false);
 
   const emailHandler = (e) => {
     setEmailFormatError(false);
@@ -66,6 +67,7 @@ const Contact = (props) => {
     }
     setCheck(false);
     setEmailFormatError(false);
+    setBtnDisabled(true);
     emailjs
       .send(
         service_id,
@@ -82,10 +84,12 @@ const Contact = (props) => {
       .then(
         (response) => {
           setNoty(true);
+          setBtnDisabled(false);
           console.log("SUCCESS!", response.status, response.text);
         },
         (error) => {
           setNotyError(true);
+          setBtnDisabled(false);
           console.log("FAILED...", error);
         }
       );
@@ -238,6 +242,7 @@ const Contact = (props) => {
               </div>
               <div className="btn">
                 <ClickBtn
+                  disabled={btnDisabled}
                   type="primaryBtn"
                   text={t("input.sendMail")}
                   onClick={submit}

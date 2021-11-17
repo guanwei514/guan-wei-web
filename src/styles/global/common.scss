@@ -41,6 +41,10 @@ html {
   cursor: pointer;
   transition: 0.3s linear;
   text-decoration: none;
+  &.disabled{
+    background-color: $gray_text;
+    cursor: not-allowed;
+  }
   &.primaryBtn {
     background-color: $primary_bg;
     color: #fff;
