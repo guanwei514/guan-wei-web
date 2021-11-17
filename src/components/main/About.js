@@ -2,6 +2,8 @@ import React from "react";
 import { useTranslation } from "../../langs/useTranslation";
 import aboutPic from "../../assets/images/aboutPic.png";
 import cv from "../../assets/files/GuanWei Su - CV (July 2021).pdf";
+import ClickBtn from "../common/ClickBtn";
+import { scrollTo } from "../../helpers/router";
 
 const About = (props) => {
   const { t } = useTranslation("about");
@@ -43,9 +45,15 @@ const About = (props) => {
               <div className="info-value">0929961079</div>
             </div>
           </div>
-          <a className="primaryBtn click-btn about-downloadCV" href={cv} download target="_blank" rel="noreferrer">
+          {/* <a className="primaryBtn click-btn about-downloadCV" href={cv} download target="_blank" rel="noreferrer">
             {t("downloadCV")}
-          </a>
+          </a> */}
+          <div
+            className={`about-downloadCV click-btn primaryBtn`}
+            onClick={() => scrollTo(0, 600, `.contact`)}
+          >
+            {t("downloadCV")}
+          </div>
         </div>
       </div>
     </div>

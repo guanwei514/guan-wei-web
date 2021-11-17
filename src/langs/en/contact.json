@@ -12,6 +12,7 @@
     "name": "Your Name",
     "noName": "Name is empty, please input it",
     "phone": "Your Phone",
+    "phoneErrorFormat": "The format of phone isn't correct",
     "email": "Your Email",
     "emailErrorFormat": "The format of email address isn't correct",
     "noEmail": "Email address is empty, please input it",

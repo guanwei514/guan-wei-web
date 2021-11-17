@@ -13,14 +13,43 @@ import RoomIcon from "@mui/icons-material/Room";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import ClickBtn from "../common/ClickBtn";
+import { emailValidator } from "../../helpers/validator";
 
 const Contact = (props) => {
   const { t } = useTranslation("contact");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [emailFormatError, setEmailFormatError] = useState(false);
   const [phone, setPhone] = useState("");
   const [content, setContent] = useState("");
   const [check, setCheck] = useState(false);
+
+  const emailHandler = (e) => {
+    setEmailFormatError(false);
+    setEmail(e);
+  };
+
+  const submit = () => {
+    setCheck(true);
+    if (!name) {
+      setCheck(true);
+      return;
+    }
+    if (!email) {
+      setCheck(true);
+      return;
+    }
+    if (!content) {
+      setCheck(true);
+      return;
+    }
+    if (emailValidator().test(email) === false) {
+      setEmailFormatError(true);
+      return;
+    }
+    setCheck(false);
+
+  };
 
   return (
     <div className="contact section">
@@ -76,6 +105,7 @@ const Contact = (props) => {
                 <div className="name">
                   <FormControl error={check && !name} variant="standard">
                     <TextField
+                      required
                       label={t("input.name")}
                       placeholder={t("input.placeholder")}
                       value={name}
@@ -89,38 +119,62 @@ const Contact = (props) => {
                   </FormControl>
                 </div>
                 <div className="phone">
-                  <FormControl error={check && !phone} variant="standard">
+                  <FormControl variant="standard">
                     <TextField
                       label={t("input.phone")}
                       placeholder={t("input.placeholder")}
                       value={phone}
+                      type="number"
                       onChange={(e) => setPhone(e.target.value)}
                     />
                   </FormControl>
                 </div>
               </div>
               <div className="email">
-                <FormControl error={check && !email} variant="standard">
+                <FormControl
+                  error={(check && !email) || emailFormatError}
+                  variant="standard"
+                >
                   <TextField
+                    required
                     label={t("input.email")}
                     placeholder={t("input.placeholder")}
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => emailHandler(e.target.value)}
                   />
+                  {check && !email && (
+                    <FormHelperText id="component-error-text">
+                      {t("input.noEmail")}
+                    </FormHelperText>
+                  )}
+                  {emailFormatError && (
+                    <FormHelperText id="component-error-text">
+                      {t("input.emailErrorFormat")}
+                    </FormHelperText>
+                  )}
                 </FormControl>
               </div>
               <div className="content">
-                <FormControl error={check && !email} variant="standard">
+                <FormControl error={check && !content} variant="standard">
                   <TextareaAutosize
+                    required
                     minRows={10}
+                    value={content}
                     placeholder={t("input.content")}
+                    onChange={(e) => setContent(e.target.value)}
                   />
+                  {check && !content && (
+                    <FormHelperText id="component-error-text">
+                      {t("input.noContent")}
+                    </FormHelperText>
+                  )}
                 </FormControl>
               </div>
               <div className="btn">
                 <ClickBtn
                   type="primaryBtn"
                   text={t("input.sendMail")}
+                  onClick={submit}
                 />
               </div>
             </div>
