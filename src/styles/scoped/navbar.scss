@@ -26,10 +26,20 @@
         text-decoration: none;
         color: #333;
         margin: 0 20px;
-        font-weight: 400;
+        font-weight: 600;
         cursor: pointer;
         &.active {
           color: $primary_bg;
+          position: relative;
+          &::after{
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 60%;
+            background-color: $primary_bg;
+            bottom: -2px;
+            right: 20%;
+          }
         }
       }
     }

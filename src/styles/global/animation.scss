@@ -30,3 +30,21 @@
     opacity: 1;
   }
 }
+
+@keyframes slider-to-right{
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slider-to-left{
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

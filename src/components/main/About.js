@@ -7,7 +7,7 @@ const About = (props) => {
   const { t } = useTranslation("about");
 
   return (
-    <div className="about">
+    <div className="about section">
       <div className="title">
         <div className="title-inner">{t("aboutMe")}</div>
       </div>

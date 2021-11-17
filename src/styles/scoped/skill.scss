@@ -1,11 +1,4 @@
 .skill {
-  padding: 30px $padding_lg 50px;
-  .subtitle {
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: $gray_text;
-    padding-bottom: 50px;
-  }
   .main-area {
     display: flex;
     justify-content: space-between;
@@ -33,13 +26,13 @@
             transition: 1s;
             &.active {
               width: 92%;
-            }
-            &::after {
-              font-size: 14px;
-              content: "92%";
-              position: absolute;
-              right: -15px;
-              top: -25px;
+              &::after {
+                font-size: 14px;
+                content: "92%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
             }
           }
           .skill-bar-value2 {
@@ -51,13 +44,13 @@
             transition: 2s;
             &.active {
               width: 75%;
-            }
-            &::after {
-              font-size: 14px;
-              content: "75%";
-              position: absolute;
-              right: -15px;
-              top: -25px;
+              &::after {
+                font-size: 14px;
+                content: "75%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
             }
           }
           .skill-bar-value3 {
@@ -69,13 +62,13 @@
             transition: 2s;
             &.active {
               width: 88%;
-            }
-            &::after {
-              font-size: 14px;
-              content: "88%";
-              position: absolute;
-              right: -15px;
-              top: -25px;
+              &::after {
+                font-size: 14px;
+                content: "88%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
             }
           }
           .skill-bar-value4 {
@@ -87,13 +80,13 @@
             transition: 2s;
             &.active {
               width: 83%;
-            }
-            &::after {
-              font-size: 14px;
-              content: "83%";
-              position: absolute;
-              right: -15px;
-              top: -25px;
+              &::after {
+                font-size: 14px;
+                content: "83%";
+                position: absolute;
+                right: -15px;
+                top: -25px;
+              }
             }
           }
         }
@@ -147,7 +140,6 @@
 
 @media (max-width: 1500px) {
   .skill {
-    padding: 30px $padding_sm 50px $padding_md;
     .main-area {
       .skill-right {
         img {
@@ -160,7 +152,6 @@
 }
 @media (max-width: 1200px) {
   .skill {
-    padding: 30px $padding_md 50px;
     .main-area {
       .skill-left {
         width: 35%;
@@ -216,7 +207,6 @@
 
 @media (max-width: 1100px) {
   .skill {
-    padding: 30px $padding_sm 50px $padding_md;
     .main-area {
       .skill-right {
         img {
@@ -230,7 +220,6 @@
 
 @media (max-width: 1000px) {
   .skill {
-    padding: 30px $padding_md 50px;
     .main-area {
       flex-direction: column;
       .skill-left {
@@ -249,7 +238,6 @@
 
 @media (max-width: 800px) {
   .skill {
-    padding: 30px $padding_sm 50px;
     .main-area {
       .skill-right {
         .tools {
@@ -263,7 +251,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .skill {
     .main-area {
       .skill-right {
@@ -289,14 +277,12 @@
 
 @media (max-width: 550px) {
   .skill {
-    padding: 30px $padding_xs 50px;
     .main-area {
       .skill-right {
         .tools {
           .tools2 {
-            justify-content: space-between;
             img {
-              width: 45%;
+              width: 35%;
             }
           }
         }
@@ -307,11 +293,11 @@
 
 @media (max-width: 400px) {
   .skill {
-    padding: 30px $padding_xs 50px;
     .main-area {
       .skill-right {
         .tools {
           .tools2 {
+            justify-content: space-between;
             width: 100%;
           }
         }

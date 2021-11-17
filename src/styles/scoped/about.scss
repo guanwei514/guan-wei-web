@@ -1,12 +1,5 @@
 .about {
   background-color: $second_bg;
-  padding: 30px $padding_lg 50px;
-  .subtitle {
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: $gray_text;
-    padding-bottom: 50px;
-  }
   .main-area {
     display: flex;
     .about-left {
@@ -19,7 +12,7 @@
       opacity: 0;
       transform: translateY(30px);
       transition: 1s;
-      &.active{
+      &.active {
         opacity: 1;
         transform: translateY(0);
       }
@@ -38,7 +31,7 @@
         opacity: 0;
         transition: 0.5s;
         transition-delay: 0.5s;
-        &.active{
+        &.active {
           opacity: 1;
         }
       }
@@ -49,8 +42,8 @@
         white-space: nowrap;
         opacity: 0;
         transition: 0.5s;
-        transition-delay:1s;
-        &.active{
+        transition-delay: 1s;
+        &.active {
           opacity: 1;
         }
         div {
@@ -63,7 +56,7 @@
         opacity: 0;
         transition: 0.5s;
         transition-delay: 1.5s;
-        &.active{
+        &.active {
           opacity: 1;
         }
       }
@@ -74,7 +67,7 @@
         opacity: 0;
         transition: 0.5s;
         transition-delay: 2s;
-        &.active{
+        &.active {
           opacity: 1;
         }
         .info {
@@ -100,7 +93,7 @@
         opacity: 0;
         transition: 0.5s;
         transition-delay: 2.5s;
-        &.active{
+        &.active {
           opacity: 1;
         }
       }
@@ -110,7 +103,6 @@
 
 @media (max-width: 1200px) {
   .about {
-    padding: 30px $padding_md 50px;
     .main-area {
       .about-left {
         width: 45%;
@@ -145,9 +137,8 @@
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
   .about {
-    padding: 30px $padding_sm 50px;
     .main-area {
       .about-left {
         width: 45%;
@@ -177,7 +168,6 @@
 
 @media (max-width: 880px) {
   .about {
-    padding: 30px $padding_md 50px;
     .main-area {
       flex-direction: column;
       align-items: center;
@@ -198,7 +188,6 @@
 
 @media (max-width: 550px) {
   .about {
-    padding: 30px $padding_xs 50px;
     .main-area {
       .about-left {
         width: 100%;

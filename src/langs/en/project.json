@@ -1,3 +1,11 @@
 {
-
+    "myProjects": "My Projects",
+    "subtitle": "A Software System Engineer Based In Taiwan",
+    "project1":"BVT Smart Manufacturing Factory",
+    "project2":"FENG HSIN Stirrup System",
+    "project3":"AIDC EDM Automatic Production Line",
+    "project4":"IRODA Manufacturing Execution System",
+    "project5":"CFRP Drilling System",
+    "project6":"Adaptive Control of 2 DoF Robot",
+    "project7":"Simple EtherCAT Master Development"
 }

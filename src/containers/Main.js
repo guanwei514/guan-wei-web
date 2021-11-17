@@ -3,6 +3,7 @@ import About from "../components/main/About";
 import Banner from "../components/main/Banner";
 import Skill from "../components/main/Skill";
 import Project from "../components/main/Project";
+import Contact from "../components/main/Contact";
 
 const Main = () => {
 
@@ -12,6 +13,7 @@ const Main = () => {
     const about = document.querySelector(".about").offsetTop;
     const skill = document.querySelector(".skill").offsetTop;
     const project = document.querySelector(".project").offsetTop;
+    const contact = document.querySelector(".contact").offsetTop;
     const h = window.screen.height;
 
     if (top + h / 2 > home && top + h / 2 < about) {
@@ -40,6 +42,12 @@ const Main = () => {
     } else {
       document.querySelector(".skill-nav").classList.remove("active");
     }
+    if (top + h / 2 > project && top + h / 2 < contact) {
+      document.querySelector(".project-nav").classList.add("active");
+      document.querySelector(".project-swiper").classList.add("active");
+    } else {
+      document.querySelector(".project-nav").classList.remove("active");
+    }
   });
 
   return (
@@ -48,6 +56,7 @@ const Main = () => {
       <About />
       <Skill />
       <Project />
+      <Contact />
     </>
   );
 };

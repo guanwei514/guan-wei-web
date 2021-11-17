@@ -26,7 +26,7 @@ const Skill = (props) => {
     { src: ethercatLogo, name: "Ethercat" },
   ];
   return (
-    <div className="skill">
+    <div className="skill section">
       <div className="title">
         <div className="title-inner">{t("mySkills")}</div>
       </div>
@@ -72,7 +72,7 @@ const Skill = (props) => {
             <div className="tools2">
               {toolsSet2.length > 0 &&
                 toolsSet2.map((e) => (
-                  <Tooltip title={e.name} placement="top">
+                  <Tooltip title={e.name} placement="top" key={e.name}>
                     <img src={e.src} alt={e.name} />
                   </Tooltip>
                 ))}
