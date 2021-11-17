@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/guan-wei-web/static/css/main.82232d11.chunk.css",
-    "main.js": "/guan-wei-web/static/js/main.249632a6.chunk.js",
-    "main.js.map": "/guan-wei-web/static/js/main.249632a6.chunk.js.map",
+    "main.css": "/guan-wei-web/static/css/main.059bd0a6.chunk.css",
+    "main.js": "/guan-wei-web/static/js/main.9a381cbe.chunk.js",
+    "main.js.map": "/guan-wei-web/static/js/main.9a381cbe.chunk.js.map",
     "runtime-main.js": "/guan-wei-web/static/js/runtime-main.9661da41.js",
     "runtime-main.js.map": "/guan-wei-web/static/js/runtime-main.9661da41.js.map",
-    "static/js/2.cd35f095.chunk.js": "/guan-wei-web/static/js/2.cd35f095.chunk.js",
-    "static/js/2.cd35f095.chunk.js.map": "/guan-wei-web/static/js/2.cd35f095.chunk.js.map",
+    "static/css/2.50a816e4.chunk.css": "/guan-wei-web/static/css/2.50a816e4.chunk.css",
+    "static/js/2.b8cfaaa6.chunk.js": "/guan-wei-web/static/js/2.b8cfaaa6.chunk.js",
+    "static/js/2.b8cfaaa6.chunk.js.map": "/guan-wei-web/static/js/2.b8cfaaa6.chunk.js.map",
     "index.html": "/guan-wei-web/index.html",
-    "static/css/main.82232d11.chunk.css.map": "/guan-wei-web/static/css/main.82232d11.chunk.css.map",
-    "static/js/2.cd35f095.chunk.js.LICENSE.txt": "/guan-wei-web/static/js/2.cd35f095.chunk.js.LICENSE.txt",
+    "static/css/2.50a816e4.chunk.css.map": "/guan-wei-web/static/css/2.50a816e4.chunk.css.map",
+    "static/css/main.059bd0a6.chunk.css.map": "/guan-wei-web/static/css/main.059bd0a6.chunk.css.map",
+    "static/js/2.b8cfaaa6.chunk.js.LICENSE.txt": "/guan-wei-web/static/js/2.b8cfaaa6.chunk.js.LICENSE.txt",
     "static/media/GuanWei Su - CV (July 2021).0446a11f.pdf": "/guan-wei-web/static/media/GuanWei Su - CV (July 2021).0446a11f.pdf",
     "static/media/aboutPic.d221e2af.png": "/guan-wei-web/static/media/aboutPic.d221e2af.png",
     "static/media/c3.5a45dfbe.png": "/guan-wei-web/static/media/c3.5a45dfbe.png",
@@ -20,14 +22,22 @@
     "static/media/mainBall.14b8e5a6.svg": "/guan-wei-web/static/media/mainBall.14b8e5a6.svg",
     "static/media/matlab.92ebdba1.png": "/guan-wei-web/static/media/matlab.92ebdba1.png",
     "static/media/net.1d1f05e0.png": "/guan-wei-web/static/media/net.1d1f05e0.png",
+    "static/media/project1.4ae05d33.gif": "/guan-wei-web/static/media/project1.4ae05d33.gif",
+    "static/media/project2.92dee89b.gif": "/guan-wei-web/static/media/project2.92dee89b.gif",
+    "static/media/project3.9f65c6a5.jpg": "/guan-wei-web/static/media/project3.9f65c6a5.jpg",
+    "static/media/project4.787f7fbe.gif": "/guan-wei-web/static/media/project4.787f7fbe.gif",
+    "static/media/project5.f0cbd75e.jpg": "/guan-wei-web/static/media/project5.f0cbd75e.jpg",
+    "static/media/project6.b05b7ade.jpg": "/guan-wei-web/static/media/project6.b05b7ade.jpg",
+    "static/media/project7.b0ea23c1.gif": "/guan-wei-web/static/media/project7.b0ea23c1.gif",
     "static/media/self.f6507994.svg": "/guan-wei-web/static/media/self.f6507994.svg",
     "static/media/sql.c6766021.png": "/guan-wei-web/static/media/sql.c6766021.png",
     "static/media/vue.48936141.png": "/guan-wei-web/static/media/vue.48936141.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9661da41.js",
-    "static/js/2.cd35f095.chunk.js",
-    "static/css/main.82232d11.chunk.css",
-    "static/js/main.249632a6.chunk.js"
+    "static/css/2.50a816e4.chunk.css",
+    "static/js/2.b8cfaaa6.chunk.js",
+    "static/css/main.059bd0a6.chunk.css",
+    "static/js/main.9a381cbe.chunk.js"
   ]
 }
