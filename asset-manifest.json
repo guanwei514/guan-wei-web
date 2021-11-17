@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/guan-wei-web/static/css/main.9fb5f2cd.chunk.css",
-    "main.js": "/guan-wei-web/static/js/main.0dbc9c86.chunk.js",
-    "main.js.map": "/guan-wei-web/static/js/main.0dbc9c86.chunk.js.map",
+    "main.js": "/guan-wei-web/static/js/main.f92d630e.chunk.js",
+    "main.js.map": "/guan-wei-web/static/js/main.f92d630e.chunk.js.map",
     "runtime-main.js": "/guan-wei-web/static/js/runtime-main.9661da41.js",
     "runtime-main.js.map": "/guan-wei-web/static/js/runtime-main.9661da41.js.map",
     "static/css/2.50a816e4.chunk.css": "/guan-wei-web/static/css/2.50a816e4.chunk.css",
-    "static/js/2.bac9ef90.chunk.js": "/guan-wei-web/static/js/2.bac9ef90.chunk.js",
-    "static/js/2.bac9ef90.chunk.js.map": "/guan-wei-web/static/js/2.bac9ef90.chunk.js.map",
+    "static/js/2.5818a130.chunk.js": "/guan-wei-web/static/js/2.5818a130.chunk.js",
+    "static/js/2.5818a130.chunk.js.map": "/guan-wei-web/static/js/2.5818a130.chunk.js.map",
     "index.html": "/guan-wei-web/index.html",
     "static/css/2.50a816e4.chunk.css.map": "/guan-wei-web/static/css/2.50a816e4.chunk.css.map",
     "static/css/main.9fb5f2cd.chunk.css.map": "/guan-wei-web/static/css/main.9fb5f2cd.chunk.css.map",
-    "static/js/2.bac9ef90.chunk.js.LICENSE.txt": "/guan-wei-web/static/js/2.bac9ef90.chunk.js.LICENSE.txt",
+    "static/js/2.5818a130.chunk.js.LICENSE.txt": "/guan-wei-web/static/js/2.5818a130.chunk.js.LICENSE.txt",
     "static/media/GuanWei Su - CV (July 2021).0446a11f.pdf": "/guan-wei-web/static/media/GuanWei Su - CV (July 2021).0446a11f.pdf",
     "static/media/aboutPic.d221e2af.png": "/guan-wei-web/static/media/aboutPic.d221e2af.png",
     "static/media/c3.5a45dfbe.png": "/guan-wei-web/static/media/c3.5a45dfbe.png",
@@ -41,8 +41,8 @@
   "entrypoints": [
     "static/js/runtime-main.9661da41.js",
     "static/css/2.50a816e4.chunk.css",
-    "static/js/2.bac9ef90.chunk.js",
+    "static/js/2.5818a130.chunk.js",
     "static/css/main.9fb5f2cd.chunk.css",
-    "static/js/main.0dbc9c86.chunk.js"
+    "static/js/main.f92d630e.chunk.js"
   ]
 }
