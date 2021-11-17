@@ -1,4 +1,26 @@
 {
-    "contact":"Contact Me",
-    "subtitle":"If you require any further information, feel free to contact me."
+  "contact": "Contact Me",
+  "subtitle": "If you require any further information, feel free to contact me.",
+  "address": "My Address",
+  "addressValue": "Rm. B301, No. 2, Wenxian Rd., Nantou City, Nantou County 54041 , Taiwan (R.O.C.)",
+  "phone": "My Phone",
+  "phoneValue1": "Office : +886 492345650",
+  "phoneValue2": "Mobile : +886 929961079",
+  "email": "My Email",
+  "input": {
+    "title": "Write to me",
+    "name": "Your Name",
+    "noName": "Name is empty, please input it",
+    "phone": "Your Phone",
+    "email": "Your Email",
+    "emailErrorFormat": "The format of email address isn't correct",
+    "noEmail": "Email address is empty, please input it",
+    "content": "Your Content",
+    "noContent": "Content is empty, please input it",
+    "placeholder": "Please typing...",
+    "required": "Required",
+    "sendMail": "Send Mail",
+    "conformSend": "Confirm to send mail ?",
+    "success": "Successfully sent, thank you !"
+  }
 }

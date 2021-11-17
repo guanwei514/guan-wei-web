@@ -14,6 +14,7 @@ const Main = () => {
     const skill = document.querySelector(".skill").offsetTop;
     const project = document.querySelector(".project").offsetTop;
     const contact = document.querySelector(".contact").offsetTop;
+    const bottom = document.querySelector(".bottom").offsetTop;
     const h = window.screen.height;
 
     if (top + h / 2 > home && top + h / 2 < about) {
@@ -47,6 +48,12 @@ const Main = () => {
       document.querySelector(".project-swiper").classList.add("active");
     } else {
       document.querySelector(".project-nav").classList.remove("active");
+    }
+    if (top + h / 2 > contact && top + h / 2 < bottom) {
+      document.querySelector(".contact-nav").classList.add("active");
+      document.querySelector(".contact").classList.add("active");
+    } else {
+      document.querySelector(".contact-nav").classList.remove("active");
     }
   });
 

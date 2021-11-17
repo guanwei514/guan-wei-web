@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "../../langs/useTranslation";
 import project1 from "../../assets/images/project1.gif";
 import project2 from "../../assets/images/project2.gif";
-import project3 from "../../assets/images/project3.jpg";
+import project3 from "../../assets/images/project3.gif";
 import project4 from "../../assets/images/project4.gif";
 import project5 from "../../assets/images/project5.jpg";
 import project6 from "../../assets/images/project6.jpg";
@@ -44,19 +44,15 @@ const Project = (props) => {
           breakpoints={{
             '500': {
               slidesPerView: 1,
-              slidesPerGroup:1,
             },
             '700': {
               slidesPerView: 2,
-              slidesPerGroup:2,
             },
             '1200': {
               slidesPerView: 3,
-              slidesPerGroup:3,
             },
             '1400': {
               slidesPerView: 4,
-              slidesPerGroup:4,
             },
           }}
           navigation={true}

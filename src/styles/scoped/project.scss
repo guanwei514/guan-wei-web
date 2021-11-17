@@ -62,8 +62,9 @@
   }
 }
 .project-swiper{
-  transform: translateX(-1000px);
-  transition: 2s;
+  transform: translateX(-1200px);
+  transition-delay: 0.5s;
+  transition: 1.5s;
   &.active{
     transform: translateX(0);
   }

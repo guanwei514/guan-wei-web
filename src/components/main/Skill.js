@@ -64,7 +64,7 @@ const Skill = (props) => {
             <div className="tools1">
               {toolsSet1.length > 0 &&
                 toolsSet1.map((e) => (
-                  <Tooltip title={e.name} placement="top">
+                  <Tooltip title={e.name} placement="top" key={e.name}>
                     <img src={e.src} alt={e.name} />
                   </Tooltip>
                 ))}

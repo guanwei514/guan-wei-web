@@ -1,3 +1,26 @@
 {
-
+  "contact": "聯繫我",
+  "subtitle": "如果您需要更多信息，請隨時與我聯繫。",
+  "address": "我的地址",
+  "addressValue": "台灣省南投縣南投市文賢路 2 號 B301 室 54041",
+  "phone": "我的手機",
+  "phoneValue1": "辦公室：+886 492345650",
+  "phoneValue2": "手機：+886 929961079",
+  "email": "我的郵箱",
+  "input": {
+    "title": "寫信給我",
+    "name": "您的名字",
+    "noName": "名稱為空，請輸入",
+    "phone": "您的手機",
+    "email": "您的郵箱",
+    "emailErrorFormat": "電子郵件地址格式不正確",
+    "noEmail": "電子郵件地址為空，請輸入",
+    "content": "您的內容",
+    "noContent": "內容為空，請輸入",
+    "placeholder": "請輸入...",
+    "必需": "必需",
+    "sendMail": "發送郵件",
+    "conformSend": "確認發送郵件？",
+    "success": "發送成功，謝謝！"
+  }
 }
