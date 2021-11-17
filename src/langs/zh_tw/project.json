@@ -1,11 +1,11 @@
 {
   "myProjects": "我的專案",
-  "subtitle": "台灣軟件系統工程師",
-  "project1": "BVT 智能製造工廠",
-  "project2": "馮欣馬鐙系統",
-  "project3": "AIDC EDM 自動生產線",
-  "project4": "IRODA 製造執行系統",
-  "project5": "CFRP 鑽孔系統",
-  "project6": "2自由度機器人的自適應控制",
-  "project7": "EtherCAT 主站開發"
+  "subtitle": "一些您可能會感興趣的專案",
+  "project1": "職訓局智慧製造工廠",
+  "project2": "豐興鋼筋箍筋系統",
+  "project3": "漢翔放電加工自動化生產線",
+  "project4": "愛烙達製造執行系統",
+  "project5": "碳纖維鑽孔系統",
+  "project6": "2軸機器人的適應性控制",
+  "project7": "EtherCAT主站開發"
 }
