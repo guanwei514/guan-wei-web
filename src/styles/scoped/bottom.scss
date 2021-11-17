@@ -1,5 +1,4 @@
 .bottom {
-  width: 100%;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -15,6 +14,9 @@
       height: 100%;
     }
   }
+  .bottom-logo-rwd {
+    display: none;
+  }
 
   .bottom-copyright-rwd {
     display: none;
@@ -29,11 +31,25 @@
 
 @media (max-width: 700px) {
   .bottom {
+    .bottom-logo {
+      display: none;
+    }
+    .bottom-logo-rwd {
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin-bottom: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
     .bottom-copyright {
       display: none;
     }
     .bottom-copyright-rwd {
       display: block;
+      white-space: nowrap;
     }
     .bottom-cooperator {
         display: flex;

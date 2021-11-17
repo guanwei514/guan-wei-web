@@ -13,6 +13,9 @@ const Bottom = () => {
       </div>
       <div className="bottom-copyright">{t("copyright")}</div>
       <div className="bottom-cooperator">
+      <div className="bottom-logo-rwd">
+        <img src={logo} alt="logo" />
+      </div>
         <div>
           {t("cooperator")} :{" "}
           <a
