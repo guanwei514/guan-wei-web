@@ -18,8 +18,7 @@ import emailjs from "emailjs-com";
 import dayjs from "dayjs";
 import * as utc from "dayjs/plugin/utc";
 import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from '@mui/material/Alert';
-
+import MuiAlert from "@mui/material/Alert";
 
 dayjs.extend(utc);
 
@@ -27,10 +26,10 @@ const Contact = (props) => {
   const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
   });
-  emailjs.init("user_d9f75yGrJwbAi6Vof55T9");
-  const service_id = "service_8wd900n";
-  const template_id = "template_gm54ry2";
-  const user_id = "user_d9f75yGrJwbAi6Vof55T9";
+  emailjs.init(process.env.REACT_APP_CONTACT_USER_ID);
+  const service_id = process.env.REACT_APP_CONTACT_SERVICE_ID;
+  const template_id = process.env.REACT_APP_CONTACT_TEMPLATE_ID;
+  const user_id = process.env.REACT_APP_CONTACT_USER_ID;
   const currentDateInUTC = () => dayjs.utc().format("YYYY-MM-DD HH:mm:ss");
   const { t } = useTranslation("contact");
   const [name, setName] = useState("");
@@ -82,11 +81,11 @@ const Contact = (props) => {
       )
       .then(
         (response) => {
-          setNoty(true)
+          setNoty(true);
           console.log("SUCCESS!", response.status, response.text);
         },
         (error) => {
-          setNotyError(true)
+          setNotyError(true);
           console.log("FAILED...", error);
         }
       );
