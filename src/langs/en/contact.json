@@ -22,6 +22,7 @@
     "required": "Required",
     "sendMail": "Send Mail",
     "conformSend": "Confirm to send mail ?",
-    "success": "Successfully sent, thank you !"
+    "success": "Successfully sent, thank you !",
+    "error": "Failed to sent mail, please contact me by phone , thank you !"
   }
 }

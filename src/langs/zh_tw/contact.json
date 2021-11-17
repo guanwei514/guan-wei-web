@@ -18,9 +18,10 @@
     "content": "您的內容",
     "noContent": "內容為空，請輸入",
     "placeholder": "請輸入...",
-    "必需": "必需",
+    "required": "必填",
     "sendMail": "發送郵件",
     "conformSend": "確認發送郵件？",
-    "success": "發送成功，謝謝！"
+    "success": "發送成功，謝謝！",
+    "error": "發送郵件失敗，請電話聯繫，謝謝！"
   }
 }

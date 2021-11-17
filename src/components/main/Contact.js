@@ -14,8 +14,24 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import ClickBtn from "../common/ClickBtn";
 import { emailValidator } from "../../helpers/validator";
+import emailjs from "emailjs-com";
+import dayjs from "dayjs";
+import * as utc from "dayjs/plugin/utc";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from '@mui/material/Alert';
+
+
+dayjs.extend(utc);
 
 const Contact = (props) => {
+  const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+  emailjs.init("user_d9f75yGrJwbAi6Vof55T9");
+  const service_id = "service_8wd900n";
+  const template_id = "template_gm54ry2";
+  const user_id = "user_d9f75yGrJwbAi6Vof55T9";
+  const currentDateInUTC = () => dayjs.utc().format("YYYY-MM-DD HH:mm:ss");
   const { t } = useTranslation("contact");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -23,6 +39,8 @@ const Contact = (props) => {
   const [phone, setPhone] = useState("");
   const [content, setContent] = useState("");
   const [check, setCheck] = useState(false);
+  const [noty, setNoty] = useState(false);
+  const [notyError, setNotyError] = useState(false);
 
   const emailHandler = (e) => {
     setEmailFormatError(false);
@@ -48,11 +66,60 @@ const Contact = (props) => {
       return;
     }
     setCheck(false);
-
+    setEmailFormatError(false);
+    emailjs
+      .send(
+        service_id,
+        template_id,
+        {
+          email,
+          name,
+          content,
+          phone,
+          time: currentDateInUTC(),
+        },
+        user_id
+      )
+      .then(
+        (response) => {
+          setNoty(true)
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (error) => {
+          setNotyError(true)
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   return (
     <div className="contact section">
+      <Snackbar
+        open={noty}
+        autoHideDuration={3000}
+        onClose={() => setNoty(false)}
+      >
+        <Alert
+          onClose={() => setNoty(false)}
+          severity="success"
+          sx={{ width: "100%" }}
+        >
+          {t("input.success")}
+        </Alert>
+      </Snackbar>
+      <Snackbar
+        open={notyError}
+        autoHideDuration={3000}
+        onClose={() => setNotyError(false)}
+      >
+        <Alert
+          onClose={() => setNotyError(false)}
+          severity="error"
+          sx={{ width: "100%" }}
+        >
+          {t("input.error")}
+        </Alert>
+      </Snackbar>
       <div className="title">
         <div className="title-inner">{t("contact")}</div>
       </div>
