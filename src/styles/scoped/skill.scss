@@ -224,6 +224,9 @@
       flex-direction: column;
       .skill-left {
         width: 100%;
+        .skill-area{
+          padding-right: 0;
+        }
       }
       .skill-right {
         width: 100%;

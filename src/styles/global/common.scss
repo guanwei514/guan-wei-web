@@ -72,6 +72,7 @@ html {
 .title {
   font-size: 35px;
   font-weight: 600;
+  margin-top: 15px;
   .title-inner {
     @include title_inner;
   }
@@ -86,16 +87,14 @@ html {
 .section {
   padding: 40px $padding_lg 50px;
 }
-.swiper{
-  padding: 20px 20px !important;
-}
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  width: 30px !important;
-  height: 30px !important;
-  top: 55% !important;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 5px rgba(48, 63, 150, 0.3);
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: $border_radius;
+  top: 94% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,11 +102,15 @@ html {
   &::after {
     color: #fff;
     font-size: 16px !important;
-    font-weight: 600;
+    font-weight: 800;
+    text-shadow: 0 0 2px $primary_bg;
   }
   &:hover {
     background-color: rgba(0, 0, 0, 0.5);
   }
+}
+.swiper-wrapper{
+  padding: 20px 0;
 }
 @media (max-width: 1500px) {
   .section {
@@ -147,6 +150,7 @@ html {
   }
   .title {
     font-size: 20px;
+    margin-top: 0px;
   }
   .subtitle {
     font-size: 12px;
@@ -156,7 +160,6 @@ html {
   .swiper-button-prev {
     width: 25px !important;
     height: 25px !important;
-    top: 57.5% !important;
     &::after {
       font-size: 14px !important;
     }
@@ -172,5 +175,33 @@ html {
     width: 20px !important;
     height: 20px !important;
     top: 55% !important;
+    padding: 2px;
+  }
+  .swiper-button-next{
+    right: 2% !important;
+  }
+  .swiper-button-prev {
+    left: 2% !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .section {
+    padding: 30px $padding_xs 50px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    border-radius: 50%;
+    top: 57% !important;
+    width: 18px !important;
+    height: 18px !important;
+    padding: 0px !important;
+  }
+  .swiper-button-next{
+    right: 1.5% !important;
+  }
+  .swiper-button-prev {
+    display: none !important;
+    left: 1% !important;
   }
 }

@@ -71,6 +71,9 @@ const Project = (props) => {
                     <div className="project-date">{e.date}</div>
                   </div>
                 </div>
+                <div className="rwd-text">
+                  {e.text}
+                </div>
               </SwiperSlide>
             ))}
         </Swiper>
