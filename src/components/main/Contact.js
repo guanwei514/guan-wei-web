@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "../../langs/useTranslation";
+import * as localforage from "localforage";
 import mapLg from "../../assets/images/map_lg.png";
 import mapXl from "../../assets/images/map_xl.png";
 import mapMd from "../../assets/images/map_md.png";
@@ -17,15 +18,12 @@ import { emailValidator } from "../../helpers/validator";
 import emailjs from "emailjs-com";
 import dayjs from "dayjs";
 import * as utc from "dayjs/plugin/utc";
-import Snackbar from "@mui/material/Snackbar";
-import MuiAlert from "@mui/material/Alert";
+import Noty from "../common/Noty";
+import CircularProgress from "@mui/material/CircularProgress";
 
 dayjs.extend(utc);
 
 const Contact = (props) => {
-  const Alert = React.forwardRef(function Alert(props, ref) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-  });
   emailjs.init(process.env.REACT_APP_CONTACT_USER_ID);
   const service_id = process.env.REACT_APP_CONTACT_SERVICE_ID;
   const template_id = process.env.REACT_APP_CONTACT_TEMPLATE_ID;
@@ -38,8 +36,11 @@ const Contact = (props) => {
   const [phone, setPhone] = useState("");
   const [content, setContent] = useState("");
   const [check, setCheck] = useState(false);
-  const [noty, setNoty] = useState(false);
-  const [notyError, setNotyError] = useState(false);
+  const [notyOpen, setNotyOpen] = useState(false);
+  const [noty, setNoty] = useState({
+    type: "success",
+    text: "",
+  });
   const [btnDisabled, setBtnDisabled] = useState(false);
 
   const emailHandler = (e) => {
@@ -47,7 +48,21 @@ const Contact = (props) => {
     setEmail(e);
   };
 
-  const submit = () => {
+  const submit = async () => {
+    const lastSubmitTime = await localforage.getItem("lastSubmitTime");
+    if (
+      lastSubmitTime &&
+      dayjs(currentDateInUTC()).diff(dayjs(lastSubmitTime), "seconds", false) <
+        60
+    ) {
+      setNoty((prev) => {
+        prev.text = t("input.tooManyTry");
+        prev.type = "error";
+        return prev;
+      });
+      setNotyOpen(true);
+      return;
+    }
     setCheck(true);
     if (!name) {
       setCheck(true);
@@ -82,47 +97,36 @@ const Contact = (props) => {
         user_id
       )
       .then(
-        (response) => {
-          setNoty(true);
+        async (response) => {
           setBtnDisabled(false);
-          console.log("SUCCESS!", response.status, response.text);
+          setNoty((prev) => {
+            prev.text = t("input.success");
+            prev.type = "success";
+            return prev;
+          });
+          setNotyOpen(true);
+          await localforage.setItem("lastSubmitTime", currentDateInUTC());
         },
         (error) => {
-          setNotyError(true);
+          setNoty((prev) => {
+            prev.text = t("input.error");
+            prev.type = "error";
+            return prev;
+          });
+          setNotyOpen(true);
           setBtnDisabled(false);
-          console.log("FAILED...", error);
         }
       );
   };
 
   return (
     <div className="contact section">
-      <Snackbar
-        open={noty}
-        autoHideDuration={3000}
-        onClose={() => setNoty(false)}
-      >
-        <Alert
-          onClose={() => setNoty(false)}
-          severity="success"
-          sx={{ width: "100%" }}
-        >
-          {t("input.success")}
-        </Alert>
-      </Snackbar>
-      <Snackbar
-        open={notyError}
-        autoHideDuration={3000}
-        onClose={() => setNotyError(false)}
-      >
-        <Alert
-          onClose={() => setNotyError(false)}
-          severity="error"
-          sx={{ width: "100%" }}
-        >
-          {t("input.error")}
-        </Alert>
-      </Snackbar>
+      <Noty
+        open={notyOpen}
+        setOpen={setNotyOpen}
+        type={noty.type}
+        text={noty.text}
+      />
       <div className="title">
         <div className="title-inner">{t("contact")}</div>
       </div>
@@ -244,7 +248,19 @@ const Contact = (props) => {
                 <ClickBtn
                   disabled={btnDisabled}
                   type="primaryBtn"
-                  text={t("input.sendMail")}
+                  text={
+                    btnDisabled ? (
+                      <CircularProgress
+                        style={{
+                          color: "#fff",
+                          width: "25px",
+                          height: "25px",
+                        }}
+                      />
+                    ) : (
+                      t("input.sendMail")
+                    )
+                  }
                   onClick={submit}
                 />
               </div>

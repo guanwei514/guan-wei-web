@@ -34,10 +34,13 @@ html {
   z-index: 999;
 }
 .click-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 15px 20px;
   box-shadow: 0 3px 10px #999;
   border-radius: $border_radius;
-  text-align: center;
   cursor: pointer;
   transition: 0.3s linear;
   text-decoration: none;
