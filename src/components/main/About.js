@@ -38,7 +38,7 @@ const About = (props) => {
             </div>
             <div className="info">
               <div className="info-label">{t("email")}</div>
-              <div className="info-value">guanweisu@gmail.com</div>
+              <div className="info-value">guanweisu514@gmail.com</div>
             </div>
             <div className="info">
               <div className="info-label">{t("phone")}</div>
