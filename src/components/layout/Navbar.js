@@ -26,7 +26,6 @@ const Navbar = () => {
   const clickHandler = (title) => {
     scrollTo(0, 600, `.${title}`);
   };
-
   const list = () => (
     <Box
       role="presentation"
