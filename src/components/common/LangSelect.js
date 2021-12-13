@@ -31,7 +31,7 @@ const LangSelect = () => {
       MenuProps={{ disableScrollLock: true }}
     >
       {Object.entries(languageOptions).map(([id, name]) => (
-        <MenuItem value={id} name={id}>
+        <MenuItem key={id} value={id} name={id}>
           {name}
         </MenuItem>
       ))}
