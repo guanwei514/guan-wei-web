@@ -66,6 +66,8 @@
   }
 }
 .MuiMenuItem-root{
+  display: flex !important;
+  justify-content: center !important;
   font-size: 14px !important;
 }
 .MuiDrawer-paper {
