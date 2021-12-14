@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Bottom from "./Bottom";
-import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
+import Loading from "../common/Loading";
 
 const Common = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -10,7 +10,9 @@ const Common = ({ children }) => {
     window.scrollTo(0, 0);
     document.querySelector(".banner-left").classList.add("active");
     document.querySelector(".banner-right").classList.add("active");
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
   };
   window.addEventListener("scroll", () => {
     const top = document.documentElement.scrollTop;
@@ -76,7 +78,7 @@ const Common = ({ children }) => {
             justifyContent: "center",
           }}
         >
-          <CircularProgress />
+          <Loading />
         </Box>
       ) : (
         ""
