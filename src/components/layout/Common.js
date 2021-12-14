@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 const Common = ({ children }) => {
   const [loading, setLoading] = useState(true);
   window.onload = () => {
+    window.scrollTo(0, 0);
     document.querySelector(".banner-left").classList.add("active");
     document.querySelector(".banner-right").classList.add("active");
     setLoading(false);
