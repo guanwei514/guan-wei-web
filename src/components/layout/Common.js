@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Bottom from "./Bottom";
-import Box from "@mui/material/Box";
 import Loading from "../common/Loading";
 
 const Common = ({ children }) => {
@@ -68,18 +67,9 @@ const Common = ({ children }) => {
   return (
     <>
       {loading ? (
-        <Box
-          sx={{
-            position: "fixed",
-            height: "100vh",
-            display: "flex",
-            alignItems: "center",
-            width: "100%",
-            justifyContent: "center",
-          }}
-        >
+        <div className="loading-outer">
           <Loading />
-        </Box>
+        </div>
       ) : (
         ""
       )}
