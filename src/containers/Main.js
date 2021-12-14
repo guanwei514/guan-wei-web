@@ -6,6 +6,10 @@ import Project from "../components/main/Project";
 import Contact from "../components/main/Contact";
 
 const Main = () => {
+  window.onload = () => {
+    document.querySelector(".banner-left").classList.add("active");
+    document.querySelector(".banner-right").classList.add("active");
+  };
   window.addEventListener("scroll", function () {
     const top = document.documentElement.scrollTop;
     const home = document.querySelector(".home").offsetTop;
@@ -19,7 +23,6 @@ const Main = () => {
     if (top + h / 2 > home && top + h / 2 < about) {
       document.querySelector(".home-nav").classList.add("active");
     } else {
-      document.querySelector(".banner-right").classList.add("active");
       document.querySelector(".home-nav").classList.remove("active");
     }
     if (top + h / 2 > about && top + h / 2 < skill) {

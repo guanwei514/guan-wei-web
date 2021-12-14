@@ -4,7 +4,7 @@ export const scrollTo = (number, time, element) => {
       return number;
     }
     const top1 = document.documentElement.scrollTop;
-    const top2 = document.querySelector(element).offsetTop - 56;
+    const top2 = element ? document.querySelector(element).offsetTop - 56 : 0;
     const spacingTime = 20; // 設置循環的間隔時間  值越小消耗性能越高
     let spacingInex = time / spacingTime; // 計算循環的次數
     let nowTop = document.body.scrollTop + document.documentElement.scrollTop; // 獲取當前滾動條位置
