@@ -14,9 +14,7 @@ const Common = ({ children }) => {
     window.scrollTo(0, 0);
     document.querySelector(".banner-left").classList.add("active");
     document.querySelector(".banner-right").classList.add("active");
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
+    setLoading(false);
     window.addEventListener("scroll", () => {
       const top = document.documentElement.scrollTop;
       const home = document.querySelector(".home").offsetTop;
