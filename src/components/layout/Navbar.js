@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/logo.png";
-import logoW from "../../assets/images/logo_w.png";
+import logo from "../../assets/images/logo.svg";
 import { useTranslation } from "../../langs/useTranslation";
 import LangSelect from "../common/LangSelect";
 import DehazeIcon from "@mui/icons-material/Dehaze";
@@ -30,7 +29,7 @@ const Navbar = () => {
       onClick={() => setShowDrawer(false)}
       onKeyDown={() => setShowDrawer(false)}
     >
-      <img src={logoW} alt="logo" />
+      <img src={logo} alt="logo" />
       <List>
         {navItems.map((e) => (
           <ListItem button key={e.title} onClick={() => clickHandler(e.title)}>

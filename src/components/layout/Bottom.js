@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo_w.png";
+import logo from "../../assets/images/logo.svg";
 import { useTranslation } from "../../langs/useTranslation";
 
 const Bottom = () => {
