@@ -1,13 +1,10 @@
 import React from "react";
-import { useTranslation } from "../../langs/useTranslation";
 import leftPic from "../../assets/images/left.svg";
 import rightPic from "../../assets/images/right.svg";
 import ClickBtn from "../common/ClickBtn";
 import { scrollTo } from "../../helpers/router";
 
 const BottomTop = () => {
-    const { t } = useTranslation("common");
-
     return (
         <div className='bottom-top'>
             <div className='bg-shape'>
